@@ -9,7 +9,10 @@ import Gallery from './components/Gallery';
 import Home from './components/Home';
 import Profil from './components/Profil';
 import Upload from './components/Upload';
+import Auth from './components/Auth';
 import NotFound from './components/NotFound';
+
+
 
 // create my component
 const MyRoute = () => (
@@ -20,6 +23,7 @@ const MyRoute = () => (
         <Route path="/gallery" component={Gallery} />
         <Route path="/upload" component={Upload} />
         <Route path="/profil" component={Profil} />
+        <Route path="/auth" component={Auth} />
         <Route component={NotFound} />
       </Switch>
     </App>

@@ -15,6 +15,7 @@ class App extends Component {
           <Link className="navbar-item" to="/gallery">Gallery</Link>
           <Link className="navbar-item" to="/upload">Upload</Link>
           <Link className="navbar-item" to="/profil">Profil</Link>
+          <Link className="navbar-item" to="/auth">Auth</Link>
           </div>
         </nav>
         {this.props.children}
