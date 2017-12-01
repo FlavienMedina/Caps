@@ -10,7 +10,9 @@ import Home from './components/Home';
 import Profil from './components/Profil';
 import Upload from './components/Upload';
 import Auth from './components/Auth';
+import Edit from './components/Profil/edit';
 import NotFound from './components/NotFound';
+
 
 
 
@@ -24,6 +26,7 @@ const MyRoute = () => (
         <Route path="/upload" component={Upload} />
         <Route path="/profil" component={Profil} />
         <Route path="/auth" component={Auth} />
+        <Route path="/profil/edit" component={Edit} />
         <Route component={NotFound} />
       </Switch>
     </App>
