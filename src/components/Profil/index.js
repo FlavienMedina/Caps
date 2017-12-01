@@ -17,17 +17,17 @@ class Profil extends Component{
       email : "jeremy.nohile@gmail.com"
     };
     return(
-    <div>
-
-    <figure className="image is-128x128">
-      <img src="{user.avatar}" />
-    </figure>
-       <p> firstname :  {user.firstname}</p>
-       <p> lastName : {user.lastname}</p>
-       <p> username : {user.username}</p>
-       <p> birthday : {user.birthday}</p>
-       <p> email : {user.email}</p>
-       <Link className="button is-primary is-outlined" to="/profil/edit">Edit</Link>
+    <div className="profile">
+      <div className="sidebar">
+        <img src="screencaps/caps-003-back-to-the-future-II.jpg"/>
+        <p> {user.firstname} {user.lastname} - {user.username}</p>
+        <p> {user.birthday}</p><p> {user.email}</p>
+        <Link className="button is-primary is-focused" to="/profil/favoris">Mes Favoris</Link>
+        <Link className="button" to="/profil/likes">Mes Likes</Link>
+        <Link className="button is-warning" to="/profil/edit">Edit</Link>
+        <Link className="button is-danger" to="/profil/logout">Logout</Link>
+    </div>
+    <div className="mainProfile"></div>
     </div>
   );
   }
