@@ -36,6 +36,21 @@ grid-template-columns: 33.33% 33.33% 33.33%;
 .caps{
   margin-bottom: 5%;
 }
-.profile{
-  padding: 20px;
+.sidebar,.main{
+  display: block;
+  float: left;
+}
+.sidebar{
+  width: 20%;
+  text-align: center;
+  box-shadow: 1px 1px 7px black;
+  height: 100vh;
+}
+.main{
+  padding: 15px;
+  width: 80%;
+}
+.button{
+  display: block;
+  margin: 20px;
 }

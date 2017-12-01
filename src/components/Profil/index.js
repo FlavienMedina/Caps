@@ -14,16 +14,16 @@ class Profil extends Component{
     };
     return(
     <div className="profile">
-      <div className="sidebar"></div>
-    <figure className="image is-128x128">
-      <img src="screencaps/caps-003-back-to-the-future-II.jpg"/>
-    </figure>
-       <p> firstname :  {user.firstname}</p>
-       <p> lastName : {user.lastname}</p>
-       <p> username : {user.username}</p>
-       <p> birthday : {user.birthday}</p>
-       <p> email : {user.email}</p>
-      <a className="button is-primary is-outlined">Edit</a>
+      <div className="sidebar">
+        <img src="screencaps/caps-003-back-to-the-future-II.jpg"/>
+        <p> {user.firstname} {user.lastname} - {user.username}</p>
+        <p> {user.birthday}</p><p> {user.email}</p>
+        <a href="profil" className="button is-primary is-focused">Mes Favoris</a>
+        <a className="button">Mes Likes</a>
+        <a className="button is-warning">Edit Profile</a>
+        <a href="/logout" className="button is-danger">Logout</a>
+    </div>
+    <div className="mainProfile"></div>
     </div>
   );
   }
