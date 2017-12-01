@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Profil from './components/Profil';
 import Upload from './components/Upload';
 import Auth from './components/Auth';
-import Edit from './components/Profil/edit';
+import Edit from './components/Profil/edit.js';
 import NotFound from './components/NotFound';
 
 

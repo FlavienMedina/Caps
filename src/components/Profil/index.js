@@ -1,8 +1,12 @@
 import React from 'react';
 import {Component} from 'react';
+import {Link} from 'react-router-dom'
 
 class Profil extends Component{
+  Editer(){
+    console.log("teste");
 
+  }
   render(){
     let user = {
       avatar : "dledlelded",
@@ -23,7 +27,7 @@ class Profil extends Component{
        <p> username : {user.username}</p>
        <p> birthday : {user.birthday}</p>
        <p> email : {user.email}</p>
-      <a className="button is-primary is-outlined">Edit</a>
+       <Link className="button is-primary is-outlined" to="/profil/edit">Edit</Link>
     </div>
   );
   }
