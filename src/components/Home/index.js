@@ -23,18 +23,23 @@ export default class Film extends Component{
     this._fetchCaps();
   }
   render() {
-        let id = 0;
-        const arrayCaps = this.state.caps.map(c => {
-          let picture = "screencaps/"+c.pathcaps;
-        return <Caps picture={picture} name={c.movie} key={id++} />;
-      });
-      // console.log(arrayCaps);
+
+        if (this.state.caps.length > 0) {
+         let id = Math.floor(Math.random() * (this.state.caps.length - 0) + 0);
+          let picture = "screencaps/"+this.state.caps[id].pathcaps;
+          const arrayCaps = <Caps picture={picture} name={this.state.caps[id].movie} key={id} />;
       return (
         <div>
         <h1>CAPS PAGE</h1>
         {arrayCaps}
         </div>
       );
+    }
+    return (
+      <div>
+      <h1>CAPS PAGE</h1>
+      </div>
+    );
   }
   _fetchCaps(){
     let data = require("./caps.json");
