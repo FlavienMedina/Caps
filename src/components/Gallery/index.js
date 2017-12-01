@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 
-class Gallery extends Component{
+class Caps extends Component{
   render(){
     return(
     <div>
@@ -12,7 +12,7 @@ class Gallery extends Component{
   }
 }
 
-export default class Film extends Component{
+export default class Gallery extends Component{
   constructor(){
     super();
     this.state = {
