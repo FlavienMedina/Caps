@@ -14,6 +14,7 @@ class App extends Component {
           <li><Link to="/gallery">Gallery</Link></li>
           <li><Link to="/upload">Upload</Link></li>
           <li><Link to="/profil">Profil</Link></li>
+          <li><Link to="/auth">signIn</Link></li>
         </ul>
         {this.props.children}
       </div>
