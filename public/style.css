@@ -36,3 +36,6 @@ grid-template-columns: 33.33% 33.33% 33.33%;
 .caps{
   margin-bottom: 5%;
 }
+.profile{
+  padding: 20px;
+}

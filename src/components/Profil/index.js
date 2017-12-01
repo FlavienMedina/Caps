@@ -13,10 +13,10 @@ class Profil extends Component{
       email : "jeremy.nohile@gmail.com"
     };
     return(
-    <div>
-
+    <div className="profile">
+      <div className="sidebar"></div>
     <figure className="image is-128x128">
-      <img src="{user.avatar}" />
+      <img src="screencaps/caps-003-back-to-the-future-II.jpg"/>
     </figure>
        <p> firstname :  {user.firstname}</p>
        <p> lastName : {user.lastname}</p>
