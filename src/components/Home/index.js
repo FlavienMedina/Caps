@@ -1,11 +1,12 @@
 import React from 'react';
 import {Component} from 'react';
+import './home.css';
 
 class Caps extends Component{
   render(){
     return(
     <div>
-      <img src={this.props.picture} />
+      <img className="homeCaps" src={this.props.picture} />
       <h3>{this.props.name}</h3>
     </div>
   );
@@ -30,7 +31,6 @@ export default class Film extends Component{
           const arrayCaps = <Caps picture={picture} name={this.state.caps[id].movie} key={id} />;
       return (
         <div>
-        <h1>CAPS PAGE</h1>
         {arrayCaps}
         </div>
       );

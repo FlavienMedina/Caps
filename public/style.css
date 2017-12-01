@@ -1,0 +1,9 @@
+.homeCaps{
+  padding: 15px;
+  display: block;
+  width: 100vw;
+  height: 85vh;
+  object-fit: cover;
+}
+body{
+}
