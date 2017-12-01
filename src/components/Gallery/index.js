@@ -1,7 +1,45 @@
 import React from 'react';
+import {Component} from 'react';
 
-const Gallery = () => (
-  <h1>Gallery</h1>
-);
+class Gallery extends Component{
+  render(){
+    return(
+    <div>
+      <img src={this.props.picture} />
+      <h3>{this.props.name}</h3>
+    </div>
+  );
+  }
+}
 
-export default Gallery;
+export default class Film extends Component{
+  constructor(){
+    super();
+    this.state = {
+      caps: []
+    }
+  }
+  componentDidMount(){
+    this._fetchCaps();
+  }
+  render() {
+        let id = 0;
+        const arrayCaps = this.state.caps.map(c => {
+          let picture = "screencaps/"+c.pathcaps;
+        return <Caps picture={picture} name={c.movie} key={id++} />;
+      });
+      // console.log(arrayCaps);
+      return (
+        <div>
+        <h1>CAPS PAGE</h1>
+        {arrayCaps}
+        </div>
+      );
+  }
+  _fetchCaps(){
+    let data = require("./caps.json");
+    console.log(data);
+    this.setState({ caps: data });
+  }
+
+}
