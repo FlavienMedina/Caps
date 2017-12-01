@@ -4,7 +4,7 @@ import {Component} from 'react';
 class Caps extends Component{
   render(){
     return(
-    <div>
+    <div className="caps">
       <img src={this.props.picture} />
       <h3>{this.props.name}</h3>
     </div>
@@ -30,8 +30,7 @@ export default class Gallery extends Component{
       });
       // console.log(arrayCaps);
       return (
-        <div>
-        <h1>CAPS PAGE</h1>
+        <div className="galleryCaps">
         {arrayCaps}
         </div>
       );
