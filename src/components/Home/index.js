@@ -5,8 +5,8 @@ import './home.css';
 class Caps extends Component{
   render(){
     return(
-    <div>
-      <img className="homeCaps" src={this.props.picture} />
+    <div className="homeCaps">
+      <img src={this.props.picture} />
       <h3>{this.props.name}</h3>
     </div>
   );
